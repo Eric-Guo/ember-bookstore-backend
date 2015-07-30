@@ -4,7 +4,7 @@ class AuthorsController < ApplicationController
   # GET /authors
   # GET /authors.json
   def index
-    @authors = Author.all
+    @authors = Author.includes(:books, :published).all
 
     render json: @authors
   end
@@ -12,7 +12,7 @@ class AuthorsController < ApplicationController
   # GET /authors/1
   # GET /authors/1.json
   def show
-    render json: @author
+    render json: @author, include: ['books']
   end
 
   # POST /authors
@@ -30,10 +30,8 @@ class AuthorsController < ApplicationController
   # PATCH/PUT /authors/1
   # PATCH/PUT /authors/1.json
   def update
-    @author = Author.find(params[:id])
-
     if @author.update(author_params)
-      head :no_content
+      render json: @author
     else
       render json: @author.errors, status: :unprocessable_entity
     end
@@ -43,8 +41,6 @@ class AuthorsController < ApplicationController
   # DELETE /authors/1.json
   def destroy
     @author.destroy
-
-    head :no_content
   end
 
   private

@@ -4,7 +4,7 @@ class PublishingHousesController < ApplicationController
   # GET /publishing_houses
   # GET /publishing_houses.json
   def index
-    @publishing_houses = PublishingHouse.all
+    @publishing_houses = PublishingHouse.includes(:published).all
 
     render json: @publishing_houses
   end
@@ -30,10 +30,8 @@ class PublishingHousesController < ApplicationController
   # PATCH/PUT /publishing_houses/1
   # PATCH/PUT /publishing_houses/1.json
   def update
-    @publishing_house = PublishingHouse.find(params[:id])
-
     if @publishing_house.update(publishing_house_params)
-      head :no_content
+      render json: @publishing_house
     else
       render json: @publishing_house.errors, status: :unprocessable_entity
     end
@@ -43,8 +41,6 @@ class PublishingHousesController < ApplicationController
   # DELETE /publishing_houses/1.json
   def destroy
     @publishing_house.destroy
-
-    head :no_content
   end
 
   private

@@ -4,7 +4,7 @@ class BooksController < ApplicationController
   # GET /books
   # GET /books.json
   def index
-    @books = Book.all
+    @books = Book.includes(:author, :publisher).all
 
     render json: @books
   end
@@ -30,10 +30,8 @@ class BooksController < ApplicationController
   # PATCH/PUT /books/1
   # PATCH/PUT /books/1.json
   def update
-    @book = Book.find(params[:id])
-
     if @book.update(book_params)
-      head :no_content
+      render json: @book
     else
       render json: @book.errors, status: :unprocessable_entity
     end
@@ -43,8 +41,6 @@ class BooksController < ApplicationController
   # DELETE /books/1.json
   def destroy
     @book.destroy
-
-    head :no_content
   end
 
   private
