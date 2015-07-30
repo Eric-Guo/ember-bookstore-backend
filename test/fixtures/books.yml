@@ -1,15 +1,107 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyString
-  price: 9.99
-  author_id: 
-  publisher_id: 
-  publisher_type: Publisher
+b1:
+  title: The Great Escape
+  price: 24.20
+  author_id: 7
+  publisher_id: 11
+  publisher_type: PublishingHouse
 
-two:
-  title: MyString
-  price: 9.99
-  author_id: 
-  publisher_id: 
-  publisher_type: Publisher
+b2:
+  title: Saving Myself
+  price: 14.13
+  author_id: 6
+  publisher_id: 11
+  publisher_type: PublishingHouse
+
+b3:
+  title: The Killer Doctors
+  price: 15.12
+  author_id: 5
+  publisher_id: 11
+  publisher_type: PublishingHouse
+
+b4:
+  title: Marianne
+  price: 10.50
+  author_id: 4
+  publisher_id: 11
+  publisher_type: PublishingHouse
+
+b5:
+  title: On the Verge of Salvation
+  price: 11.76
+  author_id: 4
+  publisher_id: 12
+  publisher_type: PublishingHouse
+
+b6:
+  title: Fields of L
+  price: 27.87
+  author_id: 3
+  publisher_id: 12
+  publisher_type: PublishingHouse
+
+b7:
+  title: Waterfront
+  price: 11.97
+  author_id: 2
+  publisher_id: 12
+  publisher_type: PublishingHouse
+
+b8:
+  title: Bored as Hell
+  price: 10.96
+  author_id: 6
+  publisher_id: 13
+  publisher_type: PublishingHouse
+
+b9:
+  title: History of the Silk Road
+  price: 8.10
+  author_id: 7
+  publisher_id: 13
+  publisher_type: PublishingHouse
+
+ba:
+  title: Something for Later
+  price: 9.54
+  author_id: 1
+  publisher_id: 1
+  publisher_type: Author
+
+bb:
+  title: What If
+  price: 13.32
+  author_id: 3
+  publisher_id: 3
+  publisher_type: Author
+
+bc:
+  title: Lilly Reborn
+  price: 16.43
+  author_id: 4
+  publisher_id: 13
+  publisher_type: PublishingHouse
+
+bd:
+  title: Anathema
+  price: 9.41
+  author_id: 5
+  publisher_id: 5
+  publisher_type: Author
+
+be:
+  title: Best Of
+  price: 14.24
+  author_id: 2
+  publisher_id: 13
+  publisher_type: PublishingHouse
+
+bf:
+  title: Any way
+  price: 19.99
+  author_id: 6
+  publisher_id: 13
+  publisher_type: PublishingHouse
+

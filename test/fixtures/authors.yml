@@ -1,7 +1,25 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
+  id: 1
+  name: James Jackson
 
 two:
-  name: MyString
+  id: 2
+  name: Roberta Rock
+
+three:
+  id: 3
+  name: Daniel Duck
+
+four:
+  id: 4
+  name: Amanda Djidjinski
+
+five:
+  id: 5
+  name: Zoe Zack
+
+six:
+  id: 6
+  name: Bill Burray

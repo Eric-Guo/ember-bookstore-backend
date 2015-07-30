@@ -1,9 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  discount: 9.99
+abc:
+  id: 11
+  name: ABC Publisher
+  discount: 40
 
-two:
-  name: MyString
-  discount: 9.99
+acme:
+  id: 12
+  name: Acme Publishing House
+  discount: 50
+
+foobar:
+  id: 13
+  name: Foobar Corporation
+  discount: 55
