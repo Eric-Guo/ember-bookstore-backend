@@ -50,6 +50,6 @@ class PublishingHousesController < ApplicationController
     end
 
     def publishing_house_params
-      params.require(:publishing_house).permit(:name, :discount)
+      params.permit(:name, :discount)
     end
 end
